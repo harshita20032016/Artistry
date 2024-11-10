@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 40px;
+    background-image: url("https://cdn.pixabay.com/photo/2021/10/11/17/54/technology-6701504_1280.jpg");
+    background-size: 100%;
+}
+
+header{
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+header h1{
+    color: rgba(76, 187, 242, 0.833);
+}
+
+header form .search-container{
+    margin-top: 20px;
+    position: relative;
+}
+
+header form .search-container input{
+    width: 50%;
+    height: 50px;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-size: 18px;
+}
+
+header form .search-container 
+.material-icons{
+    position: absolute;
+    right: 28%;
+    bottom: 12px;
+    color: black;
+    cursor: pointer;
+}
+
+.images-container{
+    margin-block: 50px;
+    color: white;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* flex-direction: column; */
+    /* margin: 2px; */
+   
+}
+.images-container img{
+    width: 330px;
+    height: 250px;
+    border-radius: 6px;
+    /* border-color:black*/
+     display: inline-block;
+     border: 2px solid white;
+     cursor: pointer;
+     /* transition: border-color 0.3s ease; */
+     
+}
+.images-container img:hover{
+    /* border-radius: 6px; */
+    border: 3px solid rgb(5, 193, 255);
+
+}
+#icons{
+    position: absolute;
+}
+/* .images-container .overlay{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: black;   
+    transition: height 0.3s ease ;
+} */
+
+/* .images-container .imgaeDiv{
+    position: relative;
+}
+
+.imgaeDiv:hover .overlay{
+    height: 100%;
+} */
+
+.loadbtn{
+    border: none;
+    background-color: rgb(12, 85, 211);
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: none;  
+
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 50px 0;
+
+} 
+@media screen and (max-width: 920px) {
+    header{
+        width: 80%;
+    }
+
+}
